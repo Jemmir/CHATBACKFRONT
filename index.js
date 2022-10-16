@@ -12,7 +12,7 @@ console.log(__dirname)
 const server = http.createServer(app)
 const io = new SocketServer(server, {
     cors: {
-        origin: ["http://localhost:3000", process.env.CORS]
+        origin: "https://mellow-bunny-e18624.netlify.app"
     }
 })
 
@@ -29,7 +29,7 @@ io.on("connection", (socket) => {
 })
 
 app.use(cors({
-    origin: ["http://localhost:3000", process.env.CORS]
+    origin: "https://mellow-bunny-e18624.netlify.app"
 }))
 
 app.use(express.static(join(__dirname, "../client/build")))
