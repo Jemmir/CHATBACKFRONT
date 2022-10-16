@@ -34,4 +34,4 @@ app.use(cors({
 
 app.use(express.static(join(__dirname, "../client/build")))
 app.use(morgan("dev"))
-server.listen(PORT, console.log("server started on http://localhost:" + PORT))asd
+server.listen(PORT, console.log("server started on http://localhost:" + PORT))
